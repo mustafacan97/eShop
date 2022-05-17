@@ -2,6 +2,8 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
+  mode: 'development',
+  devtool: "inline-source-map",
   entry: './src/index.tsx',
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -20,8 +22,7 @@ module.exports = {
         }
       },
       {
-        test: /\.tsx$/,
-        exclude: /node_modules/,
+        test: /\.tsx?$/,
         use: {
           loader: 'ts-loader',
           options: {
@@ -50,4 +51,7 @@ module.exports = {
       favicon: './public/favicon.ico'
     })
   ],
+  devServer: {
+    historyApiFallback: true
+  }
 };
