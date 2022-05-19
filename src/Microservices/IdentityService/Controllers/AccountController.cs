@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace IdentityService.Controllers
 {
     [ApiController]
+    [ValidateAntiForgeryToken]
     [Route("[controller]/[action]")]
     public class AccountController : Controller
     {
@@ -61,12 +62,6 @@ namespace IdentityService.Controllers
 
             var result = await _signInManager.PasswordSignInAsync(user, model.Password, isPersistent: model.RememberMe, true);
             return result.Succeeded;
-        }
-
-        public async Task<bool> Logout()
-        {
-            await _signInManager.SignOutAsync();
-            return true;
         }
 
         #endregion

@@ -43,7 +43,8 @@ builder.Services
         options.Cookie = new CookieBuilder
         {
             HttpOnly = true,
-            Name = "eshop.security.cookie"
+            Name = "eshop.security.cookie",
+            SameSite = SameSiteMode.Strict
         };
     });
 
