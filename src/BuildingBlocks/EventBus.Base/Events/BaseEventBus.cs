@@ -8,13 +8,9 @@ namespace EventBus.Base.Events
 {
     public abstract class BaseEventBus : IEventBus
     {
-        #region Constants and Fields
-
-        private EventBusConfig _config;
-
-        #endregion
-
         #region Public Properties
+
+        public EventBusConfig _config;
 
         public readonly IServiceProvider _serviceProvider;
 
