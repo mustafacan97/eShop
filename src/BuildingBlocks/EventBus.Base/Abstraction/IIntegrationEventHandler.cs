@@ -6,7 +6,7 @@ namespace EventBus.Base.Abstraction
     {
         #region Public Methods
 
-        Task<T> Handle(T @event);
+        Task Handle(T @event);
 
         #endregion
     }

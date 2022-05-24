@@ -15,7 +15,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Base", "src\Buildi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.RabbitMQ", "src\BuildingBlocks\EventBus.RabbitMQ\EventBus.RabbitMQ.csproj", "{D55BD87F-1800-4CC4-B20B-2B0142942EEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.Factory", "src\BuildingBlocks\EventBus.Factory\EventBus.Factory.csproj", "{12209025-1F82-4926-9B30-8013C4A3FC03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Factory", "src\BuildingBlocks\EventBus.Factory\EventBus.Factory.csproj", "{12209025-1F82-4926-9B30-8013C4A3FC03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E949488B-5789-46D0-9C2A-98050688856E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildingBlocks", "BuildingBlocks", "{6633CBF6-6676-4C64-AAD2-299CFE8DFA82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventBus.UnitTest", "tests\BuildingBlocks\EventBus.UnitTest\EventBus.UnitTest.csproj", "{D11D2D2B-A083-4824-9F35-3539D2890B54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +45,10 @@ Global
 		{12209025-1F82-4926-9B30-8013C4A3FC03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12209025-1F82-4926-9B30-8013C4A3FC03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12209025-1F82-4926-9B30-8013C4A3FC03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D11D2D2B-A083-4824-9F35-3539D2890B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D11D2D2B-A083-4824-9F35-3539D2890B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D11D2D2B-A083-4824-9F35-3539D2890B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D11D2D2B-A083-4824-9F35-3539D2890B54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +60,8 @@ Global
 		{88C36A24-5C69-44B0-B872-E617A857F258} = {D100CE78-7888-42F3-BC3E-F44257BBD0B4}
 		{D55BD87F-1800-4CC4-B20B-2B0142942EEC} = {D100CE78-7888-42F3-BC3E-F44257BBD0B4}
 		{12209025-1F82-4926-9B30-8013C4A3FC03} = {D100CE78-7888-42F3-BC3E-F44257BBD0B4}
+		{6633CBF6-6676-4C64-AAD2-299CFE8DFA82} = {E949488B-5789-46D0-9C2A-98050688856E}
+		{D11D2D2B-A083-4824-9F35-3539D2890B54} = {6633CBF6-6676-4C64-AAD2-299CFE8DFA82}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {58675BDA-8F5A-4D8A-ACB2-50664523C17F}

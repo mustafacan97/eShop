@@ -26,9 +26,9 @@ namespace EventBus.Base.Models
 
         #region Public Methods
 
-        public bool DeleteEventPrefix => string.IsNullOrEmpty(EventNamePrefix);
+        public bool DeleteEventPrefix => !string.IsNullOrEmpty(EventNamePrefix);
 
-        public bool DeleteEventSuffix => string.IsNullOrEmpty(EventNameSuffix);
+        public bool DeleteEventSuffix => !string.IsNullOrEmpty(EventNameSuffix);
 
         #endregion
     }

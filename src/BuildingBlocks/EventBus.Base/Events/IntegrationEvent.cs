@@ -7,7 +7,7 @@ namespace EventBus.Base.Events
         #region Public Properties
 
         public Guid Id { get; private set; }
-
+        
         public DateTime CreatedDate { get; private set; }
 
         #endregion
